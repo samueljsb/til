@@ -1,0 +1,11 @@
+baseURL = 'https://samueljsb.co.uk/til'
+languageCode = 'en-gb'
+title = 'TIL'
+theme = 'bare'
+
+[params]
+mainSections = ["posts"]
+author = ''
+description = ''
+hero_colour = 'info'
+# postcss = true
