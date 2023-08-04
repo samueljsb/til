@@ -9,3 +9,8 @@ repos:
     rev: v0.35.0
     hooks:
     -   id: markdownlint-fix
+-   repo: https://github.com/samueljsb/mirrors-node-markdown-spellcheck
+    rev: v1.3.1
+    hooks:
+    -   id: mdspell
+        args: ['--report', '--ignore-numbers']
