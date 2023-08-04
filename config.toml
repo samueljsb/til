@@ -1,7 +1,6 @@
 baseURL = 'https://samueljsb.co.uk/til'
 languageCode = 'en-gb'
 title = 'TIL'
-theme = 'bare'
 
 [params]
 mainSections = ["posts"]
