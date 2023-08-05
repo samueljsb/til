@@ -1,11 +1,22 @@
 baseURL = 'https://samueljsb.co.uk/til'
 languageCode = 'en-gb'
 title = 'TIL'
-theme = 'bare'
+theme = "rocinante"
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+
+[markup]
+  [markup.highlight]
+    style = "github"
 
 [params]
-mainSections = ["posts"]
-author = ''
-description = ''
-hero_colour = 'info'
-# postcss = true
+  author = "Samuel Searles-Bryant"
+  about = ""
+
+  mainSections = ["posts"]
+
+  [[params.links]]
+    [[params.links.link]]
+      name = "RSS"
+      href = "index.xml"
