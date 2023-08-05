@@ -6,7 +6,7 @@ tags:
 -   nvm
 ---
 
-My shell (`zsh`) takes a while to start up. Not *ages*, but it's noticeable when
+My shell (`zsh`) takes a while to start up. Not ages, but it's noticeable when
 it's more than half a second or so every time I open a new terminal window. So,
 I decided to try to work out what was taking so long and if I could fix it.
 
@@ -23,8 +23,8 @@ $ time  zsh -i -c exit
 zsh -i -c exit  0.53s user 0.94s system 73% cpu 2.009 total
 ```
 
-Oh dear. 2 s is very not good. I'm definitely not imagining the slow start-up
-time!
+Oh dear. 2s is very not good. I'm definitely not imagining the slow
+start-up time!
 
 ## step 2: the culprit
 
@@ -67,7 +67,7 @@ num  calls                time                       self            name
 
 This shows that the biggest culprit is `nvm`. By a long way. I don't use `nvm`
 very often, perhaps only a few times a year, so I don't need it to be available
-in every shell sessions. However, I don't want to make it *unavailable* because
+in every shell sessions. However, I don't want to make it *un*available because
 I'm very unlikely to how to get to it when I eventually need it.
 
 This situation would benefit from *lazy loading*: don't initialise `nvm` at
@@ -86,7 +86,7 @@ function nvm () {
 
 The first three lines are what I've now removed from my `.zshrc` and the last
 line forwards any options on to the real `nvm`. This means the first time I use
-it in a session it will be 2 s slower than usual, but since that' rare it's a
+it in a session it will be 2s slower than usual, but since that' rare it's a
 cost I'll happily pay to speed up start-up every other day.
 
 ## step 3: did it work?
@@ -96,5 +96,5 @@ $ time zsh -i -c exit
 zsh -i -c exit  0.14s user 0.17s system 71% cpu 0.432 total
 ```
 
-Success! 400 ms isn't the fastest, but it's quick enough that it isn't bothering
+Success! 400ms isn't the fastest, but it's quick enough that it isn't bothering
 me so a good point to stop for now.
