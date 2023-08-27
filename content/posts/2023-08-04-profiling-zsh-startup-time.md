@@ -1,6 +1,7 @@
 ---
 title: Profiling zsh start-up time
 date: 2023-08-04
+lastmod: 2023-08-26
 tags:
 -   zsh
 -   nvm
@@ -98,3 +99,25 @@ zsh -i -c exit  0.14s user 0.17s system 71% cpu 0.432 total
 
 Success! 400ms isn't the fastest, but it's quick enough that it isn't bothering
 me so a good point to stop for now.
+
+---
+
+**Update** (2023-08-6): I forgot about `npm` and `node`!
+
+The trick above made it easy to have `nvm` available when I need it but did not
+account for `npm` and `node`, which are also missing until `nvm` is initialised.
+I have fixed this by updating the block in my `.zshrc`:
+
+```sh
+function _nvm_init(){
+  unalias nvm npm node
+
+  export NVM_DIR="$XDG_CONFIG_HOME/nvm"
+  . "$NVM_DIR/nvm.sh"
+  . "$NVM_DIR/bash_completion"
+}
+
+alias nvm='_nvm_init; nvm'
+alias npm='_nvm_init; npm'
+alias node='_nvm_init; node'
+```
