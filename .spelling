@@ -1,3 +1,6 @@
+macOS
+N.B.
+
 - content/posts/2023-08-04-profiling-zsh-startup-time.md
 Bael
 2s
@@ -9,3 +12,7 @@ Brenecki
 
 - content/posts/2023-08-31-favicons.md
 favicons
+
+- content/posts/2023-09-21-check-if-commits-exist.md
+SHA
+SHAs
