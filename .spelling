@@ -1,8 +1,12 @@
 # pragma: alphabetize[case-insensitive]
+BuildKit
+Colima
+config
 linter
 linters
 macOS
 N.B.
+plugin
 
 - content/posts/2023-08-04-profiling-zsh-startup-time.md
 Bael
