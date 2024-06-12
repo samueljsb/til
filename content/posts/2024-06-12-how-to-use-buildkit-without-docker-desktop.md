@@ -23,7 +23,7 @@ which must be installed separately.
 Assuming `docker` and `colima` have already been installed:
 
 ```shell
-brew install docker colima docker-buildx
+brew install docker-buildx
 ```
 
 The plugin then needs to be symlinked
