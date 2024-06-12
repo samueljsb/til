@@ -10,6 +10,9 @@ theme = "rocinante"
   [markup.highlight]
     style = "github"
 
+  [markup.goldmark]
+    renderer.unsafe = true
+
 [params]
   author = "Samuel Searles-Bryant"
   about = ""
