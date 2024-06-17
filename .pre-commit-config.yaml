@@ -6,7 +6,7 @@ repos:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
 -   repo: https://github.com/samueljsb/sort-lines
-    rev: v0.2.0
+    rev: v0.3.0
     hooks:
     -   id: sort-lines
 -   repo: https://github.com/igorshubovych/markdownlint-cli
