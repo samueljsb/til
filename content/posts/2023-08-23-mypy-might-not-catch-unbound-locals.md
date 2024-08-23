@@ -78,3 +78,29 @@ Traceback (most recent call last):
           ^^^
 UnboundLocalError: cannot access local variable 'msg' where it is not associated with a value
 ```
+
+---
+
+## update (2024-08-23): there is a `possibly-undefined` rule
+
+There is actually a rule in `mypy`
+that will detect exactly this problem!
+It isn't enabled in strict mode,
+but it can be enabled on the command line
+with `--enable-error-code possibly-undefined`
+or in the configuration file:
+
+```ini
+[mypy]
+enable_error_code =
+    possibly-undefined,
+```
+
+This now correctly identifies the problem
+in our example module:
+
+```console
+$ mypy --enable-error-code possibly-undefined t.py
+t.py:7: error: Name "msg" may be undefined  [possibly-undefined]
+Found 1 error in 1 file (checked 1 source file)
+```
