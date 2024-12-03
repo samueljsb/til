@@ -23,3 +23,7 @@ favicons
 - content/posts/2023-09-21-check-if-commits-exist.md
 SHA
 SHAs
+
+- content/posts/2024-12-03-functools-cache-clobbers-argument-types.md
+Denton
+typeshed.
