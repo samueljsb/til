@@ -8,14 +8,16 @@ macOS
 N.B.
 plugin
 
-- content/posts/2023-08-04-profiling-zsh-startup-time.md
+# People # pragma: alphabetize
 Bael
+Brenecki
+Delfick
+Denton
+
+- content/posts/2023-08-04-profiling-zsh-startup-time.md
 2s
 400ms
 un
-
-- content/posts/2023-08-25-git-main-branch-alias.md
-Brenecki
 
 - content/posts/2023-08-31-favicons.md
 favicons
@@ -25,5 +27,7 @@ SHA
 SHAs
 
 - content/posts/2024-12-03-functools-cache-clobbers-argument-types.md
-Denton
 typeshed.
+
+- content/posts/2025-02-10-typing-runtime-checkable-does-not-check-types.md
+subtyping
