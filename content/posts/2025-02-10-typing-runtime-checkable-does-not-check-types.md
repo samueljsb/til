@@ -44,8 +44,8 @@ However, that can be misleading!
 True
 ```
 
-This tells us that `c` is an instance of `MyProto`,
-even though `c.x` is a string and we expected an integer!
+This tells us that `obj` is an instance of `HasXInt`,
+even though `obj.x` is a string and we expected an integer!
 That's because `typing.runtime_checkable`
 only checks for the presence of attributes,
 not for their type.
