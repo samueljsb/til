@@ -1,6 +1,6 @@
 baseURL = 'https://samueljsb.co.uk/til'
 languageCode = 'en-gb'
-title = 'TIL'
+title = 'TIL (samueljsb)'
 theme = "rocinante"
 
 [permalinks]
