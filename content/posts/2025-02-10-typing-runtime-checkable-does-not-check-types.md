@@ -56,6 +56,6 @@ h/t to my colleague [Stephen Delfick](https://delfick.com)
 for pointing this out to me
 and saving me from my assumptions.
 
-Thanks to my colleague [Charlie Denton](https:/meshy.co.uk)
+Thanks to my colleague [Charlie Denton](https://meshy.co.uk)
 for proof-reading this post
 and suggesting some clarifying improvements.
