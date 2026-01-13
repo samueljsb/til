@@ -74,7 +74,8 @@ wherever they are imported.
 If the module already exists in `sys.modules`,
 that will be used instead of a new import.
 
-In this case, `pkg.a` is not in `sys.modules` when the interpreter is executing `__main__`.
+In this case,
+`pkg.a` is not in `sys.modules` when the interpreter is executing `__main__`.
 But it is there once we start importing `pkg.a` the first time.
 This prevents an infinite recursion.
 
