@@ -2,6 +2,7 @@
 BuildKit
 Colima
 config
+Django
 linter
 linters
 macOS
@@ -32,3 +33,6 @@ typeshed.
 
 - content/posts/2025-02-10-typing-runtime-checkable-does-not-check-types.md
 subtyping
+
+- content/posts/2026-09-10-use-non-callable-mock-django-templates.md
+spec
